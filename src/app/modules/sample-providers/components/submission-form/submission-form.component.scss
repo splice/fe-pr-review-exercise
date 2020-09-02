@@ -1,0 +1,30 @@
+:host {
+  input, textarea {
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #555555;
+    &::placeholder {
+      border-color: #a0a0a0bd;
+    }
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin: 0;
+    padding: .5rem 1.25rem;
+    color: white;
+    border: 1px blue solid;
+    border-radius: 100px;
+    white-space: nowrap;
+    user-select: none;
+    background-color: blue;
+  }
+}
