@@ -1,5 +1,11 @@
 .container {
-  font: normal 16px/1.9em "Inter", "Source Sans Pro","Helvetica Neue", Arial, sans-serif;
   display: flex;
   margin: 0 20%;
+}
+
+h1 {
+  margin: 20px auto 0;
+  width: 200px;
+  height: 100px;
+  display: block;
 }

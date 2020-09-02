@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font: normal 16px/1.9em "Inter", "Source Sans Pro","Helvetica Neue", Arial, sans-serif;
+}
+
+.logo {
+  background-image: url('./assets/img/SpliceLogo-Black.png');
+  background-size: contain;
+}
+
+.logo-glyph {
+  background-image: url('./assets/img/SpliceGlyph-Black.png');
+  background-size: contain;
+}

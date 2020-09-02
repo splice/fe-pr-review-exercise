@@ -1,6 +1,7 @@
 
 <h1>Want to work with Splice?</h1>
 <p>Are you a sound engineer who wants to create sample packs with Splice? Fill out the form below and our team will reach out to you.</p>
+<p class="success-message" *ngIf="showSuccess">Thank you! Your information has been submitted.</p>
 
 <app-submission-form (submitForm)="submitForm($event)"></app-submission-form>
 

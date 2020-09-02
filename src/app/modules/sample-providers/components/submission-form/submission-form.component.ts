@@ -21,11 +21,19 @@ export class SubmissionFormComponent implements OnInit {
 
   ngOnInit(): void {
     const formData = {
-      label_name: [],
-      label_description: [],
-      label_contact: [],
+      label_name: ['', Validators.required],
+      label_description: ['', Validators.required],
+      label_contact: ['', Validators.required],
     };
-
     this.form = this.formBuilder.group(formData);
+  }
+
+  public onSubmit(): void {
+    if (this.form.valid) {
+      this.submitForm.emit(this.form.value);
+      this.form.reset();
+    } else {
+      console.log('invalid!');
+    }
   }
 }
