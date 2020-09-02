@@ -23,6 +23,14 @@
       Email must be in a valid format.
     </div>
   </div>
+  <div>
+    <label>
+      Upload Demo track
+    </label>
+    <input #fileInput type="file"/>
+    <audio #player src="" type="audio/mp3" controls></audio>
+  </div>
+
   <button type="submit" [disabled]="!this.form.valid || !this.form.dirty">
   Save
   </button>
