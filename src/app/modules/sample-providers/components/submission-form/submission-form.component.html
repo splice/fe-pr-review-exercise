@@ -3,19 +3,25 @@
     <label for="label-name">
       Name
     </label>
-    <input  type="text" size="large" id="label-name" formControlName="label_name"/>
+    <input  type="text"  id="label-name" formControlName="label_name"/>
   </div>
   <div>
     <label for="label-description">
       Description
     </label>
-    <input type="text" id="label-description" size="large" formControlName="label_description"/>
+    <textarea id="label-description" formControlName="label_description"></textarea>
+    <div *ngIf="labelDescription.errors?.maxlength">
+      Description cannot be over 200 characters.
+    </div>
   </div>
   <div>
     <label for="label-contact">
       Contact email
     </label>
-    <input  type="text" id="label-contact" size="large" formControlName="label_contact"/>
+    <input  type="text" id="label-contact"formControlName="label_contact"/>
+    <div *ngIf="labelContact.errors?.email">
+      Email must be in a valid format.
+    </div>
   </div>
   <button type="submit" [disabled]="!this.form.valid || !this.form.dirty">
   Save

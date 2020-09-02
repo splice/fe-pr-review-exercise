@@ -8,11 +8,14 @@ This challenge is a first for us and we haven't gotten timing and complexity rig
 ## Why a Code Review?
 We could make you live code an insane algorithm in typescript, but that's not actually going to help us know what it's like to work with you. It's also not going to give you a good idea about what it's like to work here.  Live coding is more akin to a social experiment on stress and we aren't scientists. We sell music samples... 
 
-# What are we looking for?
+## What are we looking for?
 - Communication skills
 - Catching bugs
 - How comfortable you are just looking at some wacky code
 - Suggestions on how to make code better
+
+## Styleguide
+[Checkout our angular styleguide](./STYLEGUIDE.md)
 
 # Running this app
 You can clone this exercise app so that you can run it locally. You will need to have node installed.
@@ -27,6 +30,10 @@ You can clone this exercise app so that you can run it locally. You will need to
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
@@ -34,14 +41,6 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
 

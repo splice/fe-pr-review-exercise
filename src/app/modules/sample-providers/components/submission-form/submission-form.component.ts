@@ -22,8 +22,8 @@ export class SubmissionFormComponent implements OnInit {
   ngOnInit(): void {
     const formData = {
       label_name: ['', Validators.required],
-      label_description: ['', Validators.required],
-      label_contact: ['', Validators.required],
+      label_description: ['', [Validators.required, Validators.maxLength(200)]],
+      label_contact: ['', [Validators.required, Validators.email]],
     };
     this.form = this.formBuilder.group(formData);
   }
@@ -35,5 +35,13 @@ export class SubmissionFormComponent implements OnInit {
     } else {
       console.log('invalid!');
     }
+  }
+
+  public get labelDescription() {
+    return this.form.get('label_description');
+  }
+
+  public get labelContact() {
+    return this.form.get('label_contact');
   }
 }

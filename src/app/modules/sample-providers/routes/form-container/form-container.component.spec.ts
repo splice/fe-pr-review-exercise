@@ -8,9 +8,8 @@ describe('FormContainerComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FormContainerComponent ]
-    })
-    .compileComponents();
+      declarations: [FormContainerComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -21,5 +20,11 @@ describe('FormContainerComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('submitForm shows success field ', () => {
+    expect(component.showSuccess).toBeFalsy();
+    component.submitForm({});
+    expect(component.showSuccess).toBeTruthy();
   });
 });

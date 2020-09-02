@@ -12,7 +12,6 @@ export class FormContainerComponent implements OnInit {
   ngOnInit(): void {}
 
   public submitForm(data): void {
-    console.log('form data', data);
     this.showSuccess = true;
   }
 }
