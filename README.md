@@ -1,4 +1,4 @@
-# CandidateInterview
+# Candidate Interview
 Welcome to the Splice Frontend candidate code challenge!
 
 The goal of this exercise is to get a sense of what it's like to work with you day to day. This repo contains a small angular application that has PRs made towards it. What we want to see is how you do code review. Talk through your process as a code reviewer. 
