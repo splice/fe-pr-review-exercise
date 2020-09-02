@@ -1,6 +1,27 @@
 # CandidateInterview
+Welcome to the Splice Frontend candidate code challenge!
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
+The goal of this exercise is to get a sense of what it's like to work with you day to day. This repo contains a small angular application that has PRs made towards it. What we want to see is how you do code review. Talk through your process as a code reviewer. 
+
+This challenge is a first for us and we haven't gotten timing and complexity right just yet. We might finish early or we might take a long time.  Neither of these things are indicative of your performance on the challenge. 
+
+## Why a Code Review?
+We could make you live code an insane algorithm in typescript, but that's not actually going to help us know what it's like to work with you. It's also not going to give you a good idea about what it's like to work here.  Live coding is more akin to a social experiment on stress and we aren't scientists. We sell music samples... 
+
+# What are we looking for?
+- Communication skills
+- Catching bugs
+- How comfortable you are just looking at some wacky code
+
+
+# Running this app
+You can clone this exercise app so that you can run it locally. You will need to have node installed.
+
+1) Clone the repo
+2) run `npm i`
+3) pray that went as expected
+4) run the app `ng serve`
+5) Navigate to `http://localhost:4200/`
 
 ## Development server
 
