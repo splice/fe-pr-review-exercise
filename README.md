@@ -12,7 +12,7 @@ We could make you live code an insane algorithm in typescript, but that's not ac
 - Communication skills
 - Catching bugs
 - How comfortable you are just looking at some wacky code
-
+- Suggestions on how to make code better
 
 # Running this app
 You can clone this exercise app so that you can run it locally. You will need to have node installed.
