@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-form-container',
@@ -7,11 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormContainerComponent implements OnInit {
   showSuccess = false;
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 
   public submitForm(data): void {
     this.showSuccess = true;
+    this.router.navigate(['success']);
   }
 }
