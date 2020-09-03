@@ -4,21 +4,22 @@ import { AbstractControl } from '@angular/forms';
 @Component({
   selector: 'app-form-control',
   template: `
-    <div class="form-control" *ngIf="textarea; else inputform">
-      <label>{{ label }}</label>
-      <textarea [formControl]="control"></textarea>
+    <div class="form-control" *ngIf="t; else inputform">
+      <label>{{ l }}</label>
+      <textarea [formControl]="c"></textarea>
     </div>
     <ng-template #inputform>
       <div class="form-control">
-        <label>{{ label }}</label>
-        <input type="text" [formControl]="control" />
+        <label>{{ l }}</label>
+        <input type="text" [formControl]="c" />
       </div>
     </ng-template>
   `,
+  styleUrls: ['./form-control.component.scss'],
 })
 export class FormControlComponent {
-  @Input() control: AbstractControl;
-  @Input() label: string;
-  @Input() textarea: boolean;
+  @Input() c: AbstractControl; // control
+  @Input() l: string; // label
+  @Input() t: boolean; // is textarea
   // TODO add @Input checkbox, @Input file, @Input radio etc
 }

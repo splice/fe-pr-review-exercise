@@ -1,4 +1,7 @@
 :host {
+  label {
+    display: block;
+  }
   input, textarea {
     box-sizing: border-box;
     padding: 10px;

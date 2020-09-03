@@ -34,22 +34,22 @@ import {
 })
 export class SubmissionFormComponent implements OnInit, ControlValueAccessor {
   form: FormGroup;
-  // demo file name
-  file: File;
 
-  @ViewChild('player', { read: ElementRef }) player: ElementRef;
+  f: File; // demo file
+
+  @ViewChild('p', { read: ElementRef }) p: ElementRef;
 
   @Output()
   submitForm = new EventEmitter<any>();
 
   @Input()
-  onChange = (file: File) => {};
+  onChange = (f: File) => {};
 
   @HostListener('change', ['$event.target.files'])
-  emitFiles(event: FileList) {
-    this.file = event && event.item(0);
-    this.addAudioFile();
-    this.onChange(this.file);
+  emitFiles(e: FileList) {
+    this.f = e && e.item(0);
+    this.a();
+    this.onChange(this.f);
   }
 
   registerOnChange(fn) {
@@ -60,13 +60,13 @@ export class SubmissionFormComponent implements OnInit, ControlValueAccessor {
 
   /** @ignore */
   writeValue(value) {
-    if (value === null && this.file) {
-      this.file = null;
+    if (value === null && this.f) {
+      this.f = null;
     }
   }
-
-  addAudioFile() {
-    this.player.nativeElement.src = URL.createObjectURL(this.file);
+  // add audioFile
+  a() {
+    this.p.nativeElement.src = URL.createObjectURL(this.f);
   }
 
   constructor(private formBuilder: FormBuilder) {}
