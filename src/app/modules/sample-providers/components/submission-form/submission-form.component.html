@@ -1,28 +1,44 @@
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
   <div>
-    <label for="label-name">
-      Name
-    </label>
-    <input  type="text"  id="label-name" formControlName="label_name"/>
+    <app-form-control
+      [c]="form.controls['label_name']"
+      [l]="'name'"
+      [t]='false'>
+    </app-form-control>
   </div>
   <div>
-    <label for="label-description">
-      Description
-    </label>
-    <textarea id="label-description" formControlName="label_description"></textarea>
+    <app-form-control
+    [c]="form.controls['label_description']"
+    [l]="'Description'"
+    [t]='true'>
+    </app-form-control>
     <div *ngIf="labelDescription.errors?.maxlength">
       Description cannot be over 200 characters.
     </div>
   </div>
   <div>
-    <label for="label-contact">
-      Contact email
-    </label>
-    <input  type="text" id="label-contact"formControlName="label_contact"/>
+    <app-form-control
+    [c]="form.controls['label_contact']"
+    [l]="'Contact email'"
+    [t]='false'>
+    </app-form-control>
     <div *ngIf="labelContact.errors?.email">
       Email must be in a valid format.
     </div>
   </div>
+
+  <div>
+    <label>
+      Upload Demo track
+    </label>
+    <br>
+    <br>
+    <input #fileInput type="file"/>
+    <br>
+    <br>
+    <audio #p src="" type="audio/mp3" controls></audio>
+  </div>
+
   <button type="submit" [disabled]="!this.form.valid || !this.form.dirty">
   Save
   </button>
