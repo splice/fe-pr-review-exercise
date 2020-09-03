@@ -1,24 +1,27 @@
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
   <div>
-    <label for="label-name">
-      Name
-    </label>
-    <input  type="text"  id="label-name" formControlName="label_name"/>
+    <app-form-control
+      [control]="form.controls['label_name']"
+      [label]="'name'"
+      [textarea]='false'>
+    </app-form-control>
   </div>
   <div>
-    <label for="label-description">
-      Description
-    </label>
-    <textarea id="label-description" formControlName="label_description"></textarea>
+    <app-form-control
+    [control]="form.controls['label_description']"
+    [label]="'Description'"
+    [textarea]='true'>
+    </app-form-control>
     <div *ngIf="labelDescription.errors?.maxlength">
       Description cannot be over 200 characters.
     </div>
   </div>
   <div>
-    <label for="label-contact">
-      Contact email
-    </label>
-    <input  type="text" id="label-contact"formControlName="label_contact"/>
+    <app-form-control
+    [control]="form.controls['label_contact']"
+    [label]="'Contact email'"
+    [textarea]='false'>
+    </app-form-control>
     <div *ngIf="labelContact.errors?.email">
       Email must be in a valid format.
     </div>
