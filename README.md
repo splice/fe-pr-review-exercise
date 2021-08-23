@@ -27,7 +27,7 @@ You can clone this exercise app so that you can run it locally. You will need to
 1) Clone the repo
 2) run `npm i`
 3) pray that went as expected
-4) run the app `ng serve`
+4) run the app `npx ng serve`
 5) Navigate to `http://localhost:4200/`
 
 ## Development server
