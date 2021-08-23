@@ -17,6 +17,7 @@ We could make you live code an insane algorithm in typescript, but that's not ac
 ## Styleguide
 [Checkout our angular styleguide](./STYLEGUIDE.md)
 
+## Image of Application
 ![image of application](https://github.com/splice/fe-pr-review-exercise/blob/main/app.png?raw=true)
 
 
