@@ -17,6 +17,9 @@ We could make you live code an insane algorithm in typescript, but that's not ac
 ## Styleguide
 [Checkout our angular styleguide](./STYLEGUIDE.md)
 
+![image of application](https://github.com/splice/fe-pr-review-exercise/blob/main/app.png?raw=true)
+
+
 # Running this app
 You can clone this exercise app so that you can run it locally. You will need to have node installed.
 
